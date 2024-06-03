@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>State of the States in IDD</title>
+    <link rel="icon" href='img/logo.png' type='img/ico'>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+  rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://unpkg.com/balloon-css/balloon.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="https://d3js.org/d3.v4.min.js"></script>
+</head>
+
+<div id="container">
+  <div id="header" style="background-color: #1b314a; text-align: center; width: 97%; margin-left: 10px">
+    <h1 style="color:white;">The State of the States in Intellectual and Developmental Disabilities*</h1>
+    <h2 style="color:white; font-style: italic; font-weight: 200">Accessible Data Visualization</h2>  
+  </div>
+
+<div id="body">
+
+    <h2 style="color: #1b314a;">OVERVIEW</h2>
+    <article id="sect1" style="width: 95%; background-color:white; border: 1px solid; padding: 10px">
+        <p>This is a joint work between the Coleman Institute for Cognitive Disabilities and the CU VisuaLab to make financial data accessible to people with IDDs, in the hope of supporting their self-advocacy and self-determination. Drawing on the literature, we identified three design elements: <i style="color:#1b314a">Chart Type</i>, <i style="color:#1b314a">Chart Embellishment</i>, <i style="color:#1b314a">Data Continuity</i>. We conducted a mixed-method web-based experiment with 12 participants with diagnosed IDDs (and 22 without IDDs) to investigate each of these elements in terms of <i style="color:#1b314a">Task Completion Time & Accuracy</i>; <i style="color:#1b314a">Subjective Preference</i>. Our results suggest 5 design guidelines to make bugetary data cognitively accessible: <br></p>
+         <p style="color:#1b314a"><b>(1) Avoid pie charts</b></p>
+         <p style="color:#1b314a"><b>(2) Use intelligent icons for time series data</b></p>
+         <p style="color:#1b314a"><b>(3) Avoid chart junk</b></p>
+         <p style="color:#1b314a"><b>(4) Use continuous representations for proportion data</b></p>
+         <p style="color:#1b314a"><b>(5) Use discrete encodings for time series data</b></p>
+         <p>The experiment and collected data could be accessed at <a href="https://osf.io/vp4ac/?view_only=0bce8c827d9a4aef82c5b28d996a1a7b">Accessible Visualization</a>. Below we will illustrate these guidelines with examples from our design in 3 case studies using the State of the States datasets. </p>  
+   </article>
+
+    <h2 style="color: #1b314a;">CASE STUDY 1: US TOTAL FISCAL EFFORT FROM 1997 - 2017  <a href='US Fiscal Effort.csv' target="_blank"><img style="padding-left: 10px;" src="img/excel.png" width="26" height="26"></a></h2>
+     <article id="sec2" style="width: 95%; background-color:white; border: 1px solid; padding:10px">
+      <div id="vis1">
+        <h3 style="text-align: center;">US Total Fiscal Effort For Community/Family Services And Institutional Services From 1997 - 2017</h3>
+        <svg width="800" height="500" id="svg1" style="margin: 20px; border:1px dotted"></svg>
+        <svg width="800" height="500" id="svg2" style="margin: 20px; border:1px dotted"></svg> 
+        <p style="padding-left: 20px; color:#1b314a;"><b style="background-color: #1b314a; color:white">Use discrete encodings for time-series data:</b> Scatter plots made it easier to identify the overall trend of change in data.</p><br>
+        <h3 style="text-align: center;">US Total Fiscal Effort For All Services From 1997 - 2017</h3>       
+        <svg width="800" height="500" id="svg3" style="margin: 20px; border:1px dotted"></svg>
+        <svg width="800" height="500" id="svg4" style="margin: 20px; border:1px dotted"></svg>
+        <p style="padding-left: 20px; color:#1b314a;"><b style="background-color: #1b314a; color:white">Use intelligent icons for time-series data:</b> Thickend line charts with dollar signs expedited the process of finding the maxium value.</p><br>        
+    </div>
+    </article>
+
+
+    <h2 style="color: #1b314a;">CASE STUDY 2: US TOTAL IDD SPENDING FROM 1997 - 2017  <a href='US Total IDD Spending.csv' target="_blank"><img style="padding-left: 10px;" src="img/excel.png" width="26" height="26"></a></h2>
+         <article style="width: 95%; background-color: white; border: 1px solid; padding:10px">
+         <div id="vis2"> 
+            <h3 style="text-align: center;">US Total IDD Spending From 1997 - 2017 (Federal, State, Local Combined)</h3>   
+            <svg width="800" height="500" id="svg5" style="margin: 20px; border:1px dotted"></svg>
+            <svg width="800" height="500" id="svg6" style="margin: 20px; border:1px dotted"></svg>
+            <p style="padding-left: 20px; color:#1b314a;"><b style="background-color: #1b314a; color:white">Use discrete encodings for time-series data:</b> Countable Isotype visualizations improved task performance and boosted confidence in accuracy.</p><br>
+            <h3 style="text-align: center;">US IDD Federal Spending from 1997 - 2017</h3> 
+             <svg width="800" height="500" id="svg7" style="margin: 20px; border:1px dotted"></svg>
+            <svg width="800" height="500" id="svg8" style="margin: 20px; border:1px dotted"></svg>
+             <p style="padding-left: 20px; color:#1b314a;"><b style="background-color: #1b314a; color:white">Avoid chart junk and use intelligent icons:</b> Extraneous image impeded data interpretation, however stretched icon bars signified the context and improved performance.</p>
+         </div>
+         </article>
+
+    <h2 style="color: #1b314a;">CASE STUDY 3: INDIVIDUAL STATES FISCAL EFFORTS IN 2017 <a href='2017 Individual States Fiscal Effort.csv' target="_blank"><img style="padding-left: 10px;" src="img/excel.png" width="26" height="26"></a></h2>
+         <article style="width: 95%; background-color: white; border: 1px solid; padding:10px">
+         <div id="vis3"> 
+            <h3 style="text-align: center;">US Total Fiscal Effort Across The States From 1997 - 2017 (Rocky Mountain Area)</h3> 
+            <svg width="800" height="500" id="svg9" style="margin: 20px; border:1px dotted"></svg>
+            <svg width="800" height="500" id="svg10" style="margin: 20px; border:1px dotted"></svg>
+            <p style="padding-left: 20px; color:#1b314a;"><b style="background-color: #1b314a; color:white">Avoid pie charts:</b> Though usually used by default, pie charts were not as good as stacked bar charts for size comparison.</p><br>
+             <h3 style="text-align: center;">US Total Fiscal Effort Across The States From 1997 - 2017 (Rocky Mountain Area)</h3> 
+             <svg width="800" height="500" id="svg11" style="margin: 20px; border:1px dotted"></svg>
+            <svg width="800" height="500" id="svg12" style="margin: 20px; border:1px dotted"></svg>
+             <p style="padding-left: 20px; color:#1b314a;"><b style="background-color: #1b314a; color:white">Use continuous representations for proportion data:</b> Waffle charts may overencourage counting and slow down data analysis.</p>
+         </div>
+         </article>
+    </div>
+
+<div id="footer" style="width: 100%;">
+<div class="column" id="sos" style="width: 97%; background-color: #1b314a; text-align: center; margin-left: 10px">
+<p style="color:white; font-size: 15px; font-style: italic;">*The State of the States in Intellectual and Developmental Disabilities Project is a national
+longitudinal comparative study of financial and programmatic trends in spending on supports and
+services for people with IDD in the United States. It is a data project of national significance and
+receives funding from the Administration on Community Living. For additional information visit
+www.stateofthestates.org or email us at stateofthestates@cu.edu.</p>
+</div>
+<img class="column" src='img/coleman.png' width='35%'>
+</div>
+</div>
+<script src="js/stimuli.js"></script>
+<script src="js/waffle.js"></script>
+</html>
